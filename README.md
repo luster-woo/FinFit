@@ -2,11 +2,13 @@
 
 금융성향 검사를 먼저 하고, 그 결과로 예·적금, 주식, 카드를 추천해 주는 서비스입니다. 상품이 수백 개라 무엇부터 봐야 할지 모르는 사회초년생을 생각하고 만들었습니다.
 
-|                  홈 화면                 |             금융성향 검사 결과와 추천             |
-| :-----------------------------------: | :---------------------------------------: |
-| ![홈](./screenshots/00_home_guest.png) | ![검사결과](./screenshots/13_test_result.png) |
-|               **목표 저축 플래너**              |                 **AI 금융 상담**                 |
-| ![플래너](./screenshots/17_planner.png) | ![챗봇](./screenshots/21_ai_chatbot_open.png) |
+| 홈 화면 | 금융성향 검사 결과와 추천 |
+| :---: | :---: |
+| <a href="./screenshots/00_home_guest.png"><img src="./screenshots/thumb/00_home_guest.png" width="420" alt="홈"></a> | <a href="./screenshots/13_test_result.png"><img src="./screenshots/thumb/13_test_result.png" width="420" alt="검사 결과"></a> |
+| **목표 저축 플래너** | **AI 금융 상담** |
+| <a href="./screenshots/17_planner.png"><img src="./screenshots/thumb/17_planner.png" width="420" alt="플래너"></a> | <a href="./screenshots/21_ai_chatbot_open.png"><img src="./screenshots/thumb/21_ai_chatbot_open.png" width="420" alt="챗봇"></a> |
+
+<sub>화면을 누르면 전체 캡처가 열립니다.</sub>
 
 | | |
 |---|---|
@@ -172,8 +174,6 @@ VITE_KAKAO_MAP_KEY=
 cp .env.prod.example .env.prod   # SECRET_KEY, ALLOWED_HOSTS, POSTGRES_PASSWORD
 docker compose -f docker-compose.prod.yml --env-file .env.prod up -d --build
 ```
-
-![배포 화면](./screenshots/23_deploy_ec2.png)
 
 외부에서 잰 `/api/products/` 응답은 0.40초였고, 컨테이너 네 개의 메모리는 합쳐서 469MB였습니다. 도메인이 없어 HTTPS는 붙이지 않았습니다. 확인을 마친 뒤 인스턴스는 종료해서 지금 접속할 주소는 없습니다.
 
